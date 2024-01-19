@@ -66,3 +66,13 @@ Voting app and vote result app
    > Remember, if an application needs to be exposed (accessed by others i.e Pods, external users etc.) it need a `Service` . If it does work but is not accessed by anything, then it can live on its own.
 
 3. Access the voting app
+
+## Pre-Requisites
+
+1. Run the images locally and test you have access to the voting app and result app
+
+```bash
+Make run-images
+```
+
+> If this works, you have everything set up and working as intended. If not, you need to troubleshoot and fix the issue before moving on.
