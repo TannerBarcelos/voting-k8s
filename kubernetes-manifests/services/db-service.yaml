@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: db
+  name: db # this is the name of the service and matches container name as the source code is configured to look for a service named db in postgres connection string
   labels:
     name: db
     app: demo-voting-app
