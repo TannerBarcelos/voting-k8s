@@ -7,3 +7,6 @@ run-images:
 
 apply-deployments:
 	kubectl apply -f ./kubernetes-manifests/deployments/.
+
+apply-services:
+	kubectl apply -f ./kubernetes-manifests/services/.
