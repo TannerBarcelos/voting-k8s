@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: db # this is the name of the service and matches container name as the source code is configured to look for a service named db in postgres connection string
   labels:
-    name: db
+    name: db-service
     app: demo-voting-app
 spec:
   type: ClusterIP
