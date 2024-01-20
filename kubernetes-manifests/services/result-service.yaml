@@ -7,8 +7,9 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 5001
+    - port: 80 # port exposed by the service
       targetPort: 80 # port exposed by the container for result-service
-      nodePort: 30003
+      nodePort: 30003 # port exposed by the node to access the service
   selector:
-    app: result-service
+    app: demo-voting-app
+    name: vote-result-pod

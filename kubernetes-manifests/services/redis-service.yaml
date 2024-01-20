@@ -9,4 +9,5 @@ spec:
   ports:
     - port: 6379
   selector:
-    app: redis-service
+    app: demo-voting-app
+    name: redis-pod

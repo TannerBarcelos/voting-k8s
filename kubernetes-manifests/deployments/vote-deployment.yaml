@@ -3,16 +3,19 @@ kind: Deployment
 metadata:
   name: vote-deployment
   labels:
-    app: vote
+    app: demo-voting-app
+    name: vote-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vote-service
+      app: demo-voting-app
+      name: vote-pod
   template:
     metadata:
       labels:
-        app: vote-service
+        app: demo-voting-app
+        name: vote-pod
     spec:
       containers:
         - name: vote

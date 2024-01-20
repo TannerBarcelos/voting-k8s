@@ -3,16 +3,19 @@ kind: Deployment
 metadata:
   name: redis-deployment
   labels:
-    app: redis
+    app: demo-voting-app
+    name: redis-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: redis-service
+      app: demo-voting-app
+      name: redis-pod
   template:
     metadata:
       labels:
-        app: redis-service
+        app: demo-voting-app
+        name: redis-pod
     spec:
       containers:
         - name: redis
