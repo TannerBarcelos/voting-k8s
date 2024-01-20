@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: redis
+  name: redis # source code is configured to look for a service named redis in redis connection string, so we need to name the service redis here (also good practice to name the service same as the container name)
   labels:
     name: redis
     app: demo-voting-app
