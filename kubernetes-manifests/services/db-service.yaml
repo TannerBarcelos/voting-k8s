@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: db-service
+  labels:
+    app: db
+spec:
+  type: ClusterIP
+  ports:
+    - port: 6379
+  # route to db-service pod
+  selector:
+    app: db-service
